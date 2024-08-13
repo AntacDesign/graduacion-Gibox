@@ -4,14 +4,16 @@ import Layout from '../layouts/Layout.astro';
 const link = 'https://drive.google.com/file/d/1psfBYlclFpMMTXxVlVJN6TBFh6vKAKU7/view?usp=drive_link'
 ---
 
-<Layout title="Welcome to Astro." description='Regalos para graduacion' image='/portada.jpeg' empresa='Scrapnow Memory' >
-	<div class="container m-auto">
-		<img src="/logo_scrapnowMemory.svg" alt="">
-		<h1>Gibox Graduación</h1>
-		<p>Celebra los logros de esa persona especial</p>
-		<a class="p-6 border-2 flex rounded-full" href={link}>
-			<img src="/bachelor-icon.svg" alt="bachelor cap">
-			<span>Ver Catalogo</span>
+<Layout title="Gifbox Graduación" description='Regalos para graduación' image='/portada.jpeg' empresa='Scrapnow Memory' >
+	<div class="container m-auto text-center flex flex-col items-center gap-y-4 pt-10 px-4">
+		<img src="/logo_scrapnowMemory.svg" alt="logo scrapnow memory" class="size-36 border-white border-4  rounded-full">
+		<div>
+			<h1 class="text-3xl font-medium"> ✨ Gibox Graduación 🎓✨</h1>
+			<p>Celebra los logros de esa persona especial</p>
+		</div>
+		<a class="p-2 px-6 border-2 border-white flex rounded-full align-middle max-w-full w-full mx-4 gap-6" href={link}>
+			<img src="/bachelor-icon.svg" alt="bachelor cap" class="size-10">
+			<span class="self-center">Ver Catalogo</span>
 		</a>
 	</div>
 </Layout>
